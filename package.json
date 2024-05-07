@@ -14,8 +14,8 @@
   ],
   "type": "commonjs",
   "scripts": {
-    "pub": "tsc && yarn version && yarn publish",
-    "prebuild": "rm -rf dist",
+    "pub": "tsc && npm version && npm publish",
+    "prepare": "npm run build",
     "build": "tsc",
     "start": "tsc --watch"
   },
@@ -23,7 +23,7 @@
   "author": "Ankr",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "1.7.0-beta.0"
   },
   "devDependencies": {
     "typescript": "^4.6.2"
